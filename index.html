@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Todo toggle -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div id="toggle">
+        <input id="todo-toggle" class="todo-checkbox" type="checkbox">
+        <label for="todo-toggle" class="todo-icon"><span class="material-symbols-outlined">
+            checklist
+            </span></label>
+    </div>
+    <div id="root" draggable="true">
+        <div id="todolist">
+        <input type="text" for="note" id="addTask"><button name="note" id="searchButton">Ajouter</button>
+        </div>
+        <div id="category">
+            <div id="all"><h2>ALL</h2></div>   
+            <span></span><div id="done"><h2>DONE</h2></div><span></span>
+            <div id="todo" statut="todo"><h2>TO DO</h2></div>
+        </div>
+    </div>
+</body>
+</html>
